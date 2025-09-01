@@ -1,0 +1,33 @@
+﻿@page "/PegSolitaire"
+@using Microsoft.VisualBasic
+@rendermode InteractiveServer
+
+<PageTitle>PegSolitaire</PageTitle>
+
+<h1>Peg Solitaire</h1>
+
+<p>triangle size = @config</p>
+
+<button class="btn btn-primary" @onclick="DisplayResults">Generate Solution</button>
+     @if (stringPath != null){
+        <p> A solution was found: </p>
+        @foreach(var move in stringPath)
+        {
+            var rep = move;
+            <p>@rep</p>
+        }
+    }
+
+@code {
+    private List<Move>? movePath;
+    private (string, string)[]? stringPath;
+    int config = 4;
+    private void DisplayResults()
+    {
+        BFSProgram program = new BFSProgram();
+        program.init();
+        @* movePath = program.movePath; *@
+        stringPath = program.getMovesString();
+
+    }
+}
