@@ -7,6 +7,7 @@
 <h1>Peg Solitaire</h1>
 
 <p>triangle size = @config</p>
+<p>empty peg location = @start</p>
 
 <button class="btn btn-primary" @onclick="DisplayResults">Generate Solution</button>
      @if (stringPath != null){
@@ -22,6 +23,7 @@
     private List<Move>? movePath;
     private (string, string)[]? stringPath;
     int config = 4;
+    string start = "B"; 
     private void DisplayResults()
     {
         BFSProgram program = new BFSProgram();
