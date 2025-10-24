@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Zach\\CSharpProjects\\BlazorPeg\\BlazorPeg\\BlazorPeg.csproj": {}
+    "C:\\Users\\Zach\\CSharpProjects\\Blazor-WebApp\\BlazorPeg\\BlazorPeg.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Zach\\CSharpProjects\\BlazorPeg\\BlazorPeg\\BlazorPeg.csproj": {
+    "C:\\Users\\Zach\\CSharpProjects\\Blazor-WebApp\\BlazorPeg\\BlazorPeg.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Zach\\CSharpProjects\\BlazorPeg\\BlazorPeg\\BlazorPeg.csproj",
+        "projectUniqueName": "C:\\Users\\Zach\\CSharpProjects\\Blazor-WebApp\\BlazorPeg\\BlazorPeg.csproj",
         "projectName": "BlazorPeg",
-        "projectPath": "c:\\Users\\Zach\\CSharpProjects\\BlazorPeg\\BlazorPeg\\BlazorPeg.csproj",
+        "projectPath": "C:\\Users\\Zach\\CSharpProjects\\Blazor-WebApp\\BlazorPeg\\BlazorPeg.csproj",
         "packagesPath": "C:\\Users\\Zach\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Zach\\CSharpProjects\\BlazorPeg\\BlazorPeg\\obj\\",
+        "outputPath": "C:\\Users\\Zach\\CSharpProjects\\Blazor-WebApp\\BlazorPeg\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Zach\\AppData\\Roaming\\NuGet\\NuGet.Config"
