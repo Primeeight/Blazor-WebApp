@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.SignalR;
 public partial class BFSProgram
 {
         //size of the triangle, default is 4.
-        public int tSize = 5;
+        public int tSize = 4;
         //state representation of the triangle, default is empty table.
         public int[][] stateMap = [[]];
 
