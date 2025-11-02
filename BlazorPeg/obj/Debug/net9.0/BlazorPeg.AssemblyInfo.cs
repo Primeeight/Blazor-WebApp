@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazorPeg")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+587b0d0ddc174ff4045aadd2442e0339fc2e3aef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe91934f6f361722db1d2b1ac4aa4d5d9903958d")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazorPeg")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazorPeg")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

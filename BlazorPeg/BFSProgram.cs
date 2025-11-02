@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.SignalR;
 public partial class BFSProgram
 {
         //size of the triangle, default is 4.
-        public int tSize = 5;
+        public int tSize = 4;
         //state representation of the triangle, default is empty table.
         public int[][] stateMap = [[]];
 
@@ -316,7 +316,7 @@ public partial class BFSProgram
                 //end add childern
                 return childern;
         }
-        
+
         //move alot of functionality from getChildern to getMoves.
         public Move[] GetMoves(Node currNode)
         {
@@ -324,7 +324,7 @@ public partial class BFSProgram
                 //may make this into a class
                 //(tuple, tuple, tuple)[] availMoves = new (tuple, tuple, tuple)[](i)
                 // Move[] availMoves = new Move[3];
-                List <Move> availMoves = new List<Move>();
+                List<Move> availMoves = new List<Move>();
                 (int, int)[] keyValues = adjList.Keys.ToArray();
 
                 //for i in currNode.state
@@ -363,6 +363,16 @@ public partial class BFSProgram
 
                 return availMoves.ToArray();
         }
-
-
+        public string indexString(int input)
+        {
+                decimal total = (input / 26);
+                int firstLetter = 64 + (int)Math.Floor(total);
+                int secondLetter = 64 + (input % 26);
+                firstLetter = firstLetter > 90 ? 90 : firstLetter; 
+                secondLetter = secondLetter < 65 ? 90 : secondLetter;
+                string result = "";
+                result += firstLetter < 65? "": (char)(firstLetter);
+                result += (char)secondLetter;
+                return result;
+        }
 }

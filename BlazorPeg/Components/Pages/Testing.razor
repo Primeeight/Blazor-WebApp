@@ -1,0 +1,42 @@
+@page "/TestSuite"
+@using BlazorPeg.Components.Layout
+@using Microsoft.VisualBasic
+@rendermode InteractiveServer
+
+<PageTitle>TestSuite</PageTitle>
+
+<h1>TestSuite</h1>
+
+<p>triangle size = @config</p>
+<p>empty peg location = @start</p>
+
+<button class="btn btn-primary" @onclick="TestSuite">Run Tests</button>
+     @if (stringPath != null){
+        <p> A solution was found: </p>
+        @foreach(var move in stringPath)
+        {
+            var rep = move;
+            <p>@rep</p>
+        }
+    }
+
+@code {
+    private List<Move>? movePath;
+    private (string, string)[]? stringPath;
+    int config = 4;
+    string start = "B"; 
+    //private void DisplayResults()
+    //{
+      //  BFSProgram program = new BFSProgram();
+        //program.init();
+        //@* movePath = program.movePath; *@
+        //stringPath = program.getMovesString();
+
+    //}
+    private void TestSuite()
+    {
+        TestSuite tests = new TestSuite();
+        tests.Runtests();
+    }
+    
+}

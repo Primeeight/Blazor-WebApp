@@ -1,12 +1,7 @@
-public class ProgramStart
+public class TestSuite
 {
         public static void Main(string[] args)
         {
-                BFSProgram program = new BFSProgram ();
-                program.createTriangle();
-                program.mapTriangle();
-                Node node = new Node();
-                BFSProgram bfsProgram = new BFSProgram ();
                 // //Triangel Creation testing
                 // Console.WriteLine("Testing Program Creation: " + TestTriangleCreation(program));
                 // //Solution testing
@@ -21,7 +16,8 @@ public class ProgramStart
                 // Console.WriteLine("Testing move performance " + TestMove(program));
                 // BFS testing
                 // Console.WriteLine("BFS testing " + TestBfs(bfsProgram));
-                TestBfs(bfsProgram);
+                // TestBfs(bfsProgram);
+                
                 // program = new Program();
                 // program.createTriangle();
                 // program.mapTriangle();
@@ -29,6 +25,16 @@ public class ProgramStart
 
 
         }
+        public void Runtests() 
+        {
+             BFSProgram program = new BFSProgram();
+                program.createTriangle();
+                program.mapTriangle();
+                Node node = new Node();
+                BFSProgram bfsProgram = new BFSProgram();
+                Console.WriteLine("Testing Index generation " + TestIndexGeneration(bfsProgram));
+                  
+         }
         static bool TestTriangleCreation(BFSProgram program)
         {
                 int[][] triangle = program.triMap;
@@ -125,8 +131,15 @@ public class ProgramStart
                 foreach (var move in program.movePath)
                 {
                         Console.WriteLine(move.GetRep());
-                 }
+                }
                 return program.path.Count >= 9 ? true : false;
         }
+        static bool TestIndexGeneration(BFSProgram program){
+        program.init();
+        string result = program.indexString(702);
+        string result2 = program.indexString(1);
+        bool fr = result == "ZZ" && result2 == "A";
+        return fr;
+    }
         
  }
